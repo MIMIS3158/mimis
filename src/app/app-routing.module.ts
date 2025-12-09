@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'inscription',
+    redirectTo: 'signup',
     pathMatch: 'full'
   },
   {
@@ -24,24 +24,26 @@ const routes: Routes = [
     loadChildren: () => import('./profile-dev/profile-dev.module').then( m => m.ProfileDevPageModule)
   },
   {
-    path: 'profile-entrepreneur',
+    path: 'profile/entrepreneur',
     loadChildren: () => import('./profile-entrepreneur/profile-entrepreneur.module').then( m => m.ProfileEntrepreneurPageModule)
   },
   {
-    path: 'publier-projet',
-    loadChildren: () => import('./publier-projet/publier-projet.module').then( m => m.PublierProjetPageModule)
+    path: 'project/publish',
+    loadChildren: () => import('./publier-projet/publier-projet.module').then( m => m.PublishProjectPageModule)
   },
   {
     path: 'postulation',
     loadChildren: () => import('./postulation/postulation.module').then( m => m.PostulationPageModule)
   },
   {
-    path: 'deconnexion',
-    loadChildren: () => import('./deconnexion/deconnexion.module').then( m => m.DeconnexionPageModule)
+    // fixme: pas besoin de page pour le logout, un bouton suffit, appel le back, 
+    // vide le local storage et redirige vers la page d'accuil
+    path: 'signout', 
+    loadChildren: () => import('./signout/signout.module').then( m => m.SignoutPageModule)
   },
   {
-    path: 'inscription',
-    loadChildren: () => import('./login/login.module').then( m => m.InscriptionPageModule)
+    path: 'signin',
+    loadChildren: () => import('./login/login.module').then( m => m.SigninPageModule)
   },
   {
     path: 'signup',

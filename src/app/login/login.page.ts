@@ -18,10 +18,11 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inscription',
-  templateUrl: './inscription.page.html',
-  styleUrls: ['./inscription.page.scss'],
+  templateUrl: './login.page.html',
+  styleUrls: ['./login.page.scss'],
+  standalone: false
 })
-export class InscriptionPage implements OnInit {
+export class SigninPage implements OnInit {
 
   user = {
     email: '',

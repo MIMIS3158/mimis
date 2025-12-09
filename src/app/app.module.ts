@@ -9,8 +9,14 @@ import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
+  imports: [
+    BrowserModule, 
+    IonicModule.forRoot({
+      // innerHTMLTemplatesEnabled: true,
+    }),
+    AppRoutingModule
+  ],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
 })
 export class AppModule {}

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { DeconnexionPage } from './deconnexion.page';
+import { DeconnexionPage } from './signout.page';
 
 const routes: Routes = [
   {

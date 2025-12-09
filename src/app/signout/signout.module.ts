@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { DeconnexionPageRoutingModule } from './deconnexion-routing.module';
+import { DeconnexionPageRoutingModule } from './signout-routing.module';
 
-import { DeconnexionPage } from './deconnexion.page';
+import { DeconnexionPage } from './signout.page';
 
 @NgModule({
   imports: [
@@ -17,5 +17,5 @@ import { DeconnexionPage } from './deconnexion.page';
   ],
   declarations: [DeconnexionPage]
 })
-export class DeconnexionPageModule {}
+export class SignoutPageModule {}
 

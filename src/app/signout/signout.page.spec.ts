@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { DeconnexionPage } from './deconnexion.page';
+import { DeconnexionPage } from './signout.page';
 
 describe('DeconnexionPage', () => {
   let component: DeconnexionPage;

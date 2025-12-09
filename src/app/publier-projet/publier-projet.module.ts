@@ -17,4 +17,4 @@ import { PublierProjetPage } from './publier-projet.page';
   ],
   declarations: [PublierProjetPage]
 })
-export class PublierProjetPageModule {}
+export class PublishProjectPageModule {}

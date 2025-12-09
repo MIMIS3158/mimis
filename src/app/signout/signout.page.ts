@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-deconnexion',
-  templateUrl: './deconnexion.page.html',
-  styleUrls: ['./deconnexion.page.scss'],
+  selector: 'app-signout',
+  templateUrl: './signout.page.html',
+  styleUrls: ['./signout.page.scss'],
+  standalone: false
 })
 export class DeconnexionPage implements OnInit {
 
